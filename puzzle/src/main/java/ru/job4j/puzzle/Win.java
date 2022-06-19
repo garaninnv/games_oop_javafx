@@ -11,8 +11,8 @@ public class Win {
     }
 
     public static boolean horizonWin(int[][] board, int line){
-        for (int i = 0; i < board.length; i++) {
-            if (board[line][i] != 1) {
+        for (int j = 0; j < board.length; j++) {
+            if (board[line][j] != 1) {
                 return false;
             }
         }
@@ -20,8 +20,8 @@ public class Win {
     }
 
     public static boolean verticalWin(int[][] board, int line){
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][line] != 1) {
+        for (int[] ints : board) {
+            if (ints[line] != 1) {
                 return false;
             }
         }
