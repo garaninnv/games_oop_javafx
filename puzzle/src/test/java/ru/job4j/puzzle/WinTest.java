@@ -1,12 +1,9 @@
 package ru.job4j.puzzle;
 
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-
-
 
 public class WinTest {
     @Test
