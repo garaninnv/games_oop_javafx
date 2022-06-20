@@ -20,6 +20,7 @@ public class Win {
     }
 
     public static boolean verticalWin(int[][] board, int line) {
+
         for (int[] ints : board) {
             if (ints[line] != 1) {
                 return false;
