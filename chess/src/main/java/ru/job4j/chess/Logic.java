@@ -23,7 +23,7 @@ public final class Logic {
     private boolean free(Cell[] steps) throws OccupiedCellException, FigureNotFoundException {
         for (Cell el: steps) {
             for (Figure f: figures) {
-                if (findBy(el) == findBy(f.position())) {
+                if (f != null && f.position().equals(el)) {
                     throw new OccupiedCellException("Cell is occupied by another Figure.");
                 }
             }
@@ -44,6 +44,6 @@ public final class Logic {
                 return index;
             }
         }
-        throw new FigureNotFoundException();
+        throw new FigureNotFoundException("Figure not found on the board.");
     }
 }

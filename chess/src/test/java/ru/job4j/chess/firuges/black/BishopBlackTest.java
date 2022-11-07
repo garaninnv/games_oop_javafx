@@ -4,9 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
 
-import java.sql.Array;
-import java.util.Arrays;
-import java.util.Collections;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
