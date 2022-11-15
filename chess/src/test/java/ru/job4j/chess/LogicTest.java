@@ -29,7 +29,7 @@ public void whenMoveThenOccupiedCellException()
     logic.add(bishopBlack);
     logic.add(bishopBlack1);
     OccupiedCellException exception = assertThrows(OccupiedCellException.class, () -> {
-        logic.move(Cell.A3, Cell.C5);
+        logic.move(bishopBlack.position(), bishopBlack1.position());
     });
     assertThat(exception.getMessage()).isEqualTo("Cell is occupied by another Figure.");
 }
